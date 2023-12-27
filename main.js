@@ -1,4 +1,4 @@
-const API = 'https://api.thecatapi.com/v1/images/search?limit=3';
+const API = 'https://api.thecatapi.com/v1/images/search?limit=3&api_key=live_o5jKiBu7nddK5Pk9WnrAT9ESG8k9xzqDzneETXQucxoTEha9j3NQdIzje4hMGDdH';
 
 
 async function reload () {
