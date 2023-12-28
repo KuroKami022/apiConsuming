@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Square+Peg&display=swap" rel="stylesheet">
-    <title>Random Cat with API REST</title>
-</head>
-<body>
-    <header>
-        <h1>Random Cat</h1>
-    </header>
-    <section class="randomMichis">
-        <article>
-            <img width="250" height="250" id="image1" alt="Cat random Picture" class="img1">
-            <button type="button" class="random-cat-button"> Save this Cat!</button>
-        </article>
-        <article>
-            <img width="250" height="250" id="image2" alt="Cat random Picture" class="img2">
-            <button type="button" class="random-cat-button"> Save this Cat!</button>
-        </article>
-        <article>
-            <img width="250" height="250" id="image3" alt="Cat random Picture" class="img3">
-            <button type="button" class="random-cat-button"> Save this Cat!</button>
-        </article>
-        <button onclick="reload()" type="button" class="random-cat-button"> Show me an Cat!</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gatitos aleatorios</title>
+  </head>
+  <body>
+    <h1>Michis App</h1>
+
+    <span id="error"></span>
+
+    <section id="randomMichis">
+      <h2>Michis aleatorios</h2>
+
+      <article>
+        <img id="img1" width="150" alt="Foto gatito aleatorio" />
+        <button>Guardar michi en favoritos</button>
+      </article>
+
+      <article>
+        <img id="img2" width="150" alt="Foto gatito aleatorio" />
+        <button>Guardar michi en favoritos</button>
+      </article>
+
+      <button onclick="loadRandomMichis()">Recargar</button>
     </section>
 
-    <section class="favoritesMichis">
-        <h1>Favorite Cats</h1>
-        <img width="250" height="250" id="image1" alt="Cat random Picture" class="img1">
-        <button type="button" class="random-cat-button"> Delete this Cat!</button>
+    <section id="favoritesMichis">
+      <h2>Michis favoritos</h2>
+
+      <article>
+        <img id="img1" width="150" alt="Foto gatito aleatorio" />
+        <button>Sacar al michi de favoritos</button>
+      </article>
     </section>
 
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
