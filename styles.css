@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding:  0;
+}
+header h1{
+    font-size: 1.5em;
+}
+header .header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+.animated-gradient {
+    /* Define the radial gradient */
+    background: radial-gradient(circle, rgb(229, 19, 194) 37%, rgba(34, 40, 49, 1) 57%, rgba(167, 17, 66, 0.648) 65%, rgba(238, 238, 238, 1) 81%);
+
+    /* Create a larger background size for animation */
+    background-size: 400% 400%;
+
+    /* Animate the background position to create the moving effect */
+    animation: gradient-animation 10s ease infinite;
+}
+body .random-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+body .random-section-container h2{
+    font-size: 1.2em;
+}
+body .random-section-container article{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+body .random-section-container article button{
+    margin-top: 1vh;
+    font-size: 0.6em;
+}
+body .upload-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+body .upload-section-container h2{
+    font-size: 1.2em;
+}
+body .upload-section-container form{
+    display: flex;
+    flex-direction: column;
+}
+body .upload-section-container form input{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    margin-bottom: 2vh;
+}
+body .favorites-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+body .favorites-section-container h2{
+    font-size: 1.2em;
+}
+body .favorites-section-container article{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+body .favorites-section-container article button{
+    margin-top: 1vh;
+    font-size: 0.6em;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 0%;
+    }
+    30% {
+        background-position: 30% 30%;
+      }
+    50% {
+      background-position: 100% 100%;
+    }
+    70% {
+        background-position: 70% 70%;
+      }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
