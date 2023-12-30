@@ -3,7 +3,7 @@ const api = axios.create({
 });
 api.defaults.headers.common['X-API-KEY'] = 'c08d415f-dea7-4a38-bb28-7b2188202e46';
 
-const API_URL_RANDOM = 'https://api.thecatapi.com/v1/images/search?limit=2';
+const API_URL_RANDOM = 'https://api.thecatapi.com/v1/images/search?limit=4';
 const API_URL_FAVOTITES = 'https://api.thecatapi.com/v1/favourites';
 const API_URL_FAVOTITES_DELETE = (id) => `https://api.thecatapi.com/v1/favourites/${id}`;
 const API_URL_UPLOAD = 'https://api.thecatapi.com/v1/images/upload';
@@ -21,14 +21,20 @@ async function loadRandomMichis() {
   } else {
     const img1 = document.getElementById('img1');
     const img2 = document.getElementById('img2');
+    const img3 = document.getElementById('img3');
+    const img4 = document.getElementById('img4');
     const btn1 = document.getElementById('btn1');
     const btn2 = document.getElementById('btn2');
-    
+
     img1.src = data[0].url;
     img2.src = data[1].url;
+    img3.src = data[2].url;
+    img4.src = data[3].url;
 
     btn1.onclick = () => saveFavouriteMichi(data[0].id);
     btn2.onclick = () => saveFavouriteMichi(data[1].id);
+    btn3.onclick = () => saveFavouriteMichi(data[1].id);
+    btn4.onclick = () => saveFavouriteMichi(data[1].id);
   }
 }
 
